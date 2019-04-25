@@ -1,0 +1,198 @@
+﻿body
+{
+    background-image: url(/Styles/loginstyle/image/bg.jpg);
+    margin-left:45%;
+    margin-top:15%;
+    margin-bottom:20%;
+}
+
+div
+{
+    font-family: 'Lato', Calibri, Arial, sans-serif;
+}
+
+.user
+{
+  background: transparent url(/Styles/loginstyle/image/user.png) no-repeat;
+  width: 240px;
+  height: 42px; 
+  border:none;
+  margin-top:5px;
+  padding-top:4px;
+  padding-left:56px;
+  color:white;
+  float:none;
+  position:relative;
+  outline:none;
+}
+
+.password
+{
+    background: transparent url('/Styles/loginstyle/image/pwd.png') no-repeat;
+    width: 240px;
+    height: 43px;
+    border:none;
+    margin-top:-4px;
+    padding-top:3px;
+    padding-left:56px;
+    color:white;
+    float:left;
+    position:relative;
+    outline:none;
+}
+
+.button
+{
+    border-style: none;
+    border-color: inherit;
+    border-width: medium;
+    background: url('/Styles/loginstyle/image/btn.png') no-repeat;
+    width:243px;
+    height:43px;
+    float:left;
+    margin-top:39px;
+    margin-left:-297px;
+    position:static;
+    outline:none;
+    cursor:pointer;
+}
+
+.button:hover
+{
+    background: transparent url('/Styles/loginstyle/image/btnhov.png') no-repeat;
+}
+
+.checkbox
+{
+    width:118px;
+    height:23px;
+    outline:0;
+    font-size:smaller;
+    color:#747474;
+    float:none;
+    position:relative;
+    float:left;
+    text-transform:uppercase;
+    margin-top:36px;
+    margin-left:-290px;
+    top: 0px;
+    left: 0px;
+    text-align:center;
+    
+}
+
+.valemployee
+{
+   margin-left:-52px;
+   margin-top:11px;
+   position:absolute;
+}
+
+.valpwd
+{
+    margin-left:19px;
+    margin-top:0px;
+    position:absolute;
+}
+
+.logo
+{
+    width:21%;
+    height:45px;
+    margin-bottom:5%;
+    margin-left:2%;
+}
+
+.pic
+{
+    float:none;
+    height: 67px;
+    width: 194px;
+    padding-bottom: 3px;
+    margin-left:-10px;
+}
+
+.form
+{
+    margin-top:15px;
+    margin-left:-10px;
+}
+
+.labeltop
+{
+    display:block;
+    color:Red;
+    font-size:large;
+    cursor:default;
+}
+
+.labelbottom
+{
+    clear:both;
+    color : #47a3da;
+    font-size: smaller;
+    float:left;
+    position:relative;
+    margin-top:10px;
+    margin-left:-20px;
+    cursor:default;
+}
+
+.regnew
+{
+    clear:both;
+    color : #47a3da;
+    font-size: medium;
+    float:left;
+    text-decoration:none;
+    position:relative;
+    margin-top:10px;
+    margin-left:5px;
+    cursor:pointer;
+    top: 0px;
+    left: 84px;
+    width: 72px;
+}
+
+.regnew:hover
+{
+    color: Red;
+}
+
+.showpwd
+{
+    background: url(/Styles/loginstyle/image/hide2.png) no-repeat;
+    width:18px;
+    height:14px;
+    border:none;
+    margin-left:-88px;
+    margin-top:10px;
+    position:relative;
+    outline:none;
+    cursor:pointer;
+}
+
+.showpwd:hover,
+.showpwd:active
+{
+    background: url(/Styles/loginstyle/image/showpwd.png) no-repeat;
+}
+
+.showpwd2
+{
+    background: url(/Styles/loginstyle/image/showpwd.png) no-repeat;
+    width:18px;
+    height:14px;
+    border:none;
+    margin-left:-88px;
+    margin-top:10px;
+    position:relative;
+    outline:none;
+    cursor:pointer;
+}
+
+.showpwd2:hover,
+.showpwd2:active
+{
+    background: url(/Styles/loginstyle/image/hide2.png) no-repeat;
+}

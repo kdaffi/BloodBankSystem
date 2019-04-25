@@ -1,0 +1,617 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{F33701C5-91BB-4F57-8104-E8E2443D5953}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>BBS</RootNamespace>
+    <AssemblyName>BBS</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AjaxControlToolkit">
+      <HintPath>..\packages\AjaxControlToolkit.7.1213\lib\40\AjaxControlToolkit.dll</HintPath>
+    </Reference>
+    <Reference Include="AjaxMin">
+      <HintPath>..\packages\AjaxMin.4.97.4951.28483\lib\net40\AjaxMin.dll</HintPath>
+    </Reference>
+    <Reference Include="HtmlAgilityPack">
+      <HintPath>..\packages\HtmlAgilityPack.1.4.6\lib\Net40\HtmlAgilityPack.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.Data.Edm">
+      <HintPath>..\packages\Microsoft.Data.Edm.5.2.0\lib\net40\Microsoft.Data.Edm.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Data.OData">
+      <HintPath>..\packages\Microsoft.Data.OData.5.2.0\lib\net40\Microsoft.Data.OData.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.WindowsAzure.Configuration">
+      <HintPath>..\packages\Microsoft.WindowsAzure.ConfigurationManager.1.8.0.0\lib\net35-full\Microsoft.WindowsAzure.Configuration.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.WindowsAzure.Storage">
+      <HintPath>..\packages\WindowsAzure.Storage.2.1.0.3\lib\net40\Microsoft.WindowsAzure.Storage.dll</HintPath>
+    </Reference>
+    <Reference Include="MySql.Data, Version=6.8.3.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data.Services.Client" />
+    <Reference Include="System.Spatial">
+      <HintPath>..\packages\System.Spatial.5.2.0\lib\net40\System.Spatial.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Admin\AddAdmin.aspx" />
+    <Content Include="Admin\AddBlood.aspx" />
+    <Content Include="Admin\AppBloodReqTo.aspx" />
+    <Content Include="Admin\AppBloodRequestFrom.aspx" />
+    <Content Include="Admin\BlockUser.aspx" />
+    <Content Include="Admin\BloodBank.aspx" />
+    <Content Include="Admin\BloodRequestDetails.aspx" />
+    <Content Include="Admin\BloodRequestDonorDetails.aspx" />
+    <Content Include="Admin\BloodRequestFrom.aspx" />
+    <Content Include="Admin\Delete.aspx" />
+    <Content Include="Admin\DonorDetails.aspx" />
+    <Content Include="Admin\Home.aspx" />
+    <Content Include="Admin\PendBloodReqFrom.aspx" />
+    <Content Include="Admin\PendBloodReqTo.aspx" />
+    <Content Include="Admin\RejBloodReqFrom.aspx" />
+    <Content Include="Admin\RejBloodReqTo.aspx" />
+    <Content Include="Admin\RequestToDonor.aspx" />
+    <Content Include="Admin\ViewDetails.aspx" />
+    <Content Include="BloodRequest.aspx" />
+    <Content Include="calender.png" />
+    <Content Include="DonorRegister.aspx" />
+    <Content Include="Donor\AppBloodReqFrom.aspx" />
+    <Content Include="Donor\BloodRequest.aspx" />
+    <Content Include="Donor\BloodRequestDetails.aspx" />
+    <Content Include="Donor\EditInformation.aspx" />
+    <Content Include="Donor\Home.aspx" />
+    <Content Include="Donor\PendBloodReqFrom.aspx" />
+    <Content Include="Donor\RejBloodReqFrom.aspx" />
+    <Content Include="HospitalRegister.aspx" />
+    <Content Include="Hospital\AddBlood.aspx" />
+    <Content Include="Hospital\AppBloodReqFrom.aspx" />
+    <Content Include="Hospital\AppBloodReqTo.aspx" />
+    <Content Include="Hospital\AppBloodReqToDonor.aspx" />
+    <Content Include="Hospital\BloodBank.aspx" />
+    <Content Include="Hospital\BloodRequestDetails.aspx" />
+    <Content Include="Hospital\BloodRequestDonorDetails.aspx" />
+    <Content Include="Hospital\BloodRequestFrom.aspx" />
+    <Content Include="Hospital\BloodRequestTo.aspx" />
+    <Content Include="Hospital\BloodRequestToDonor.aspx" />
+    <Content Include="Hospital\Delete.aspx" />
+    <Content Include="Hospital\DonorDetails.aspx" />
+    <Content Include="Hospital\Home.aspx" />
+    <Content Include="Hospital\PendBloodReqFrom.aspx" />
+    <Content Include="Hospital\PendBloodReqTo.aspx" />
+    <Content Include="Hospital\PendBloodReqToDonor.aspx" />
+    <Content Include="Hospital\RejBloodReqFrom.aspx" />
+    <Content Include="Hospital\RejBloodReqTo.aspx" />
+    <Content Include="Hospital\RejBloodReqToDonor.aspx" />
+    <Content Include="Hospital\test.aspx" />
+    <Content Include="Hospital\ViewDetails.aspx" />
+    <Content Include="images\calendar.png" />
+    <Content Include="images\hbck.png" />
+    <Content Include="Login.aspx" />
+    <Content Include="Logout.aspx" />
+    <Content Include="Registration.aspx" />
+    <Content Include="Scripts\calendar-en.min.js" />
+    <Content Include="Scripts\jquery.dynDateTime.min.js" />
+    <Content Include="Scripts\jquery.min.js" />
+    <Content Include="Scripts\jquery.simple-table-filter.min.js" />
+    <Content Include="Styles\calendar-blue.css" />
+    <Content Include="Styles\Image\hbck.png" />
+    <Content Include="Styles\Image\hbck1.png" />
+    <Content Include="Styles\Image\logo.PNG" />
+    <Content Include="Styles\loginstyle\1.png" />
+    <Content Include="Styles\loginstyle\image\bg.jpg" />
+    <Content Include="Styles\loginstyle\image\btn.png" />
+    <Content Include="Styles\loginstyle\image\btnhov.png" />
+    <Content Include="Styles\loginstyle\image\hide2.png" />
+    <Content Include="Styles\loginstyle\image\pwd.png" />
+    <Content Include="Styles\loginstyle\image\show2.png" />
+    <Content Include="Styles\loginstyle\image\showpwd.png" />
+    <Content Include="Styles\loginstyle\image\user.png" />
+    <Content Include="Styles\loginstyle\LoginPage.css" />
+    <Content Include="Styles\masterpagemenustyle\css\component.css" />
+    <Content Include="Styles\masterpagemenustyle\css\default.css" />
+    <Content Include="Styles\masterpagemenustyle\img\buthov.png" />
+    <Content Include="Styles\masterpagemenustyle\img\button.png" />
+    <Content Include="Styles\masterpagemenustyle\img\head.png" />
+    <Content Include="Styles\masterpagemenustyle\img\left1.png" />
+    <Content Include="Styles\masterpagemenustyle\img\right1.png" />
+    <Content Include="Styles\masterpagemenustyle\img\search.png" />
+    <Content Include="Styles\masterpagemenustyle\js\cbpHorizontalMenu.js" />
+    <Content Include="Styles\masterpagemenustyle\js\cbpHorizontalMenu.min.js" />
+    <Content Include="Styles\masterpagemenustyle\js\modernizr.custom.js" />
+    <Content Include="Styles\Site.css" />
+    <Content Include="Global.asax" />
+    <Content Include="Scripts\jquery-1.4.1-vsdoc.js" />
+    <Content Include="Scripts\jquery-1.4.1.js" />
+    <Content Include="Scripts\jquery-1.4.1.min.js" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Admin\AddAdmin.aspx.cs">
+      <DependentUpon>AddAdmin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\AddAdmin.aspx.designer.cs">
+      <DependentUpon>AddAdmin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\AddBlood.aspx.cs">
+      <DependentUpon>AddBlood.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\AddBlood.aspx.designer.cs">
+      <DependentUpon>AddBlood.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\AdminMaster.Master.cs">
+      <DependentUpon>AdminMaster.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\AdminMaster.Master.designer.cs">
+      <DependentUpon>AdminMaster.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\AppBloodReqTo.aspx.cs">
+      <DependentUpon>AppBloodReqTo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\AppBloodReqTo.aspx.designer.cs">
+      <DependentUpon>AppBloodReqTo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\AppBloodRequestFrom.aspx.cs">
+      <DependentUpon>AppBloodRequestFrom.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\AppBloodRequestFrom.aspx.designer.cs">
+      <DependentUpon>AppBloodRequestFrom.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\BlockUser.aspx.cs">
+      <DependentUpon>BlockUser.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\BlockUser.aspx.designer.cs">
+      <DependentUpon>BlockUser.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\BloodBank.aspx.cs">
+      <DependentUpon>BloodBank.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\BloodBank.aspx.designer.cs">
+      <DependentUpon>BloodBank.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\BloodRequestDetails.aspx.cs">
+      <DependentUpon>BloodRequestDetails.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\BloodRequestDetails.aspx.designer.cs">
+      <DependentUpon>BloodRequestDetails.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\BloodRequestDonorDetails.aspx.cs">
+      <DependentUpon>BloodRequestDonorDetails.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\BloodRequestDonorDetails.aspx.designer.cs">
+      <DependentUpon>BloodRequestDonorDetails.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\BloodRequestFrom.aspx.cs">
+      <DependentUpon>BloodRequestFrom.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\BloodRequestFrom.aspx.designer.cs">
+      <DependentUpon>BloodRequestFrom.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Delete.aspx.cs">
+      <DependentUpon>Delete.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Delete.aspx.designer.cs">
+      <DependentUpon>Delete.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\DonorDetails.aspx.cs">
+      <DependentUpon>DonorDetails.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\DonorDetails.aspx.designer.cs">
+      <DependentUpon>DonorDetails.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Home.aspx.cs">
+      <DependentUpon>Home.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Home.aspx.designer.cs">
+      <DependentUpon>Home.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\PendBloodReqFrom.aspx.cs">
+      <DependentUpon>PendBloodReqFrom.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\PendBloodReqFrom.aspx.designer.cs">
+      <DependentUpon>PendBloodReqFrom.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\PendBloodReqTo.aspx.cs">
+      <DependentUpon>PendBloodReqTo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\PendBloodReqTo.aspx.designer.cs">
+      <DependentUpon>PendBloodReqTo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\RejBloodReqFrom.aspx.cs">
+      <DependentUpon>RejBloodReqFrom.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\RejBloodReqFrom.aspx.designer.cs">
+      <DependentUpon>RejBloodReqFrom.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\RejBloodReqTo.aspx.cs">
+      <DependentUpon>RejBloodReqTo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\RejBloodReqTo.aspx.designer.cs">
+      <DependentUpon>RejBloodReqTo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\RequestToDonor.aspx.cs">
+      <DependentUpon>RequestToDonor.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\RequestToDonor.aspx.designer.cs">
+      <DependentUpon>RequestToDonor.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\ViewDetails.aspx.cs">
+      <DependentUpon>ViewDetails.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\ViewDetails.aspx.designer.cs">
+      <DependentUpon>ViewDetails.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DonorRegister.aspx.cs">
+      <DependentUpon>DonorRegister.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DonorRegister.aspx.designer.cs">
+      <DependentUpon>DonorRegister.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Donor\AppBloodReqFrom.aspx.cs">
+      <DependentUpon>AppBloodReqFrom.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Donor\AppBloodReqFrom.aspx.designer.cs">
+      <DependentUpon>AppBloodReqFrom.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Donor\BloodRequest.aspx.cs">
+      <DependentUpon>BloodRequest.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Donor\BloodRequest.aspx.designer.cs">
+      <DependentUpon>BloodRequest.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Donor\BloodRequestDetails.aspx.cs">
+      <DependentUpon>BloodRequestDetails.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Donor\BloodRequestDetails.aspx.designer.cs">
+      <DependentUpon>BloodRequestDetails.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Donor\DonorMaster.Master.cs">
+      <DependentUpon>DonorMaster.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Donor\DonorMaster.Master.designer.cs">
+      <DependentUpon>DonorMaster.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Donor\EditInformation.aspx.cs">
+      <DependentUpon>EditInformation.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Donor\EditInformation.aspx.designer.cs">
+      <DependentUpon>EditInformation.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Donor\Home.aspx.cs">
+      <DependentUpon>Home.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Donor\Home.aspx.designer.cs">
+      <DependentUpon>Home.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Donor\PendBloodReqFrom.aspx.cs">
+      <DependentUpon>PendBloodReqFrom.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Donor\PendBloodReqFrom.aspx.designer.cs">
+      <DependentUpon>PendBloodReqFrom.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Donor\RejBloodReqFrom.aspx.cs">
+      <DependentUpon>RejBloodReqFrom.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Donor\RejBloodReqFrom.aspx.designer.cs">
+      <DependentUpon>RejBloodReqFrom.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="BloodRequest.aspx.cs">
+      <DependentUpon>BloodRequest.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BloodRequest.aspx.designer.cs">
+      <DependentUpon>BloodRequest.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="HospitalRegister.aspx.cs">
+      <DependentUpon>HospitalRegister.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HospitalRegister.aspx.designer.cs">
+      <DependentUpon>HospitalRegister.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Hospital\AddBlood.aspx.cs">
+      <DependentUpon>AddBlood.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Hospital\AddBlood.aspx.designer.cs">
+      <DependentUpon>AddBlood.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Hospital\AppBloodReqFrom.aspx.cs">
+      <DependentUpon>AppBloodReqFrom.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Hospital\AppBloodReqFrom.aspx.designer.cs">
+      <DependentUpon>AppBloodReqFrom.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Hospital\AppBloodReqTo.aspx.cs">
+      <DependentUpon>AppBloodReqTo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Hospital\AppBloodReqTo.aspx.designer.cs">
+      <DependentUpon>AppBloodReqTo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Hospital\AppBloodReqToDonor.aspx.cs">
+      <DependentUpon>AppBloodReqToDonor.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Hospital\AppBloodReqToDonor.aspx.designer.cs">
+      <DependentUpon>AppBloodReqToDonor.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Hospital\BloodBank.aspx.cs">
+      <DependentUpon>BloodBank.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Hospital\BloodBank.aspx.designer.cs">
+      <DependentUpon>BloodBank.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Hospital\BloodRequestDetails.aspx.cs">
+      <DependentUpon>BloodRequestDetails.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Hospital\BloodRequestDetails.aspx.designer.cs">
+      <DependentUpon>BloodRequestDetails.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Hospital\BloodRequestDonorDetails.aspx.cs">
+      <DependentUpon>BloodRequestDonorDetails.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Hospital\BloodRequestDonorDetails.aspx.designer.cs">
+      <DependentUpon>BloodRequestDonorDetails.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Hospital\BloodRequestFrom.aspx.cs">
+      <DependentUpon>BloodRequestFrom.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Hospital\BloodRequestFrom.aspx.designer.cs">
+      <DependentUpon>BloodRequestFrom.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Hospital\BloodRequestTo.aspx.cs">
+      <DependentUpon>BloodRequestTo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Hospital\BloodRequestTo.aspx.designer.cs">
+      <DependentUpon>BloodRequestTo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Hospital\BloodRequestToDonor.aspx.cs">
+      <DependentUpon>BloodRequestToDonor.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Hospital\BloodRequestToDonor.aspx.designer.cs">
+      <DependentUpon>BloodRequestToDonor.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Hospital\Delete.aspx.cs">
+      <DependentUpon>Delete.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Hospital\Delete.aspx.designer.cs">
+      <DependentUpon>Delete.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Hospital\DonorDetails.aspx.cs">
+      <DependentUpon>DonorDetails.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Hospital\DonorDetails.aspx.designer.cs">
+      <DependentUpon>DonorDetails.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Hospital\Home.aspx.cs">
+      <DependentUpon>Home.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Hospital\Home.aspx.designer.cs">
+      <DependentUpon>Home.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Hospital\HospitalMaster.Master.cs">
+      <DependentUpon>HospitalMaster.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Hospital\HospitalMaster.Master.designer.cs">
+      <DependentUpon>HospitalMaster.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Hospital\PendBloodReqFrom.aspx.cs">
+      <DependentUpon>PendBloodReqFrom.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Hospital\PendBloodReqFrom.aspx.designer.cs">
+      <DependentUpon>PendBloodReqFrom.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Hospital\PendBloodReqTo.aspx.cs">
+      <DependentUpon>PendBloodReqTo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Hospital\PendBloodReqTo.aspx.designer.cs">
+      <DependentUpon>PendBloodReqTo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Hospital\PendBloodReqToDonor.aspx.cs">
+      <DependentUpon>PendBloodReqToDonor.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Hospital\PendBloodReqToDonor.aspx.designer.cs">
+      <DependentUpon>PendBloodReqToDonor.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Hospital\RejBloodReqFrom.aspx.cs">
+      <DependentUpon>RejBloodReqFrom.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Hospital\RejBloodReqFrom.aspx.designer.cs">
+      <DependentUpon>RejBloodReqFrom.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Hospital\RejBloodReqTo.aspx.cs">
+      <DependentUpon>RejBloodReqTo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Hospital\RejBloodReqTo.aspx.designer.cs">
+      <DependentUpon>RejBloodReqTo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Hospital\RejBloodReqToDonor.aspx.cs">
+      <DependentUpon>RejBloodReqToDonor.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Hospital\RejBloodReqToDonor.aspx.designer.cs">
+      <DependentUpon>RejBloodReqToDonor.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Hospital\test.aspx.cs">
+      <DependentUpon>test.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Hospital\test.aspx.designer.cs">
+      <DependentUpon>test.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Hospital\ViewDetails.aspx.cs">
+      <DependentUpon>ViewDetails.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Hospital\ViewDetails.aspx.designer.cs">
+      <DependentUpon>ViewDetails.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Logout.aspx.cs">
+      <DependentUpon>Logout.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Logout.aspx.designer.cs">
+      <DependentUpon>Logout.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Registration.aspx.cs">
+      <DependentUpon>Registration.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Registration.aspx.designer.cs">
+      <DependentUpon>Registration.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Style.Master.cs">
+      <DependentUpon>Style.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Style.Master.designer.cs">
+      <DependentUpon>Style.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Style.Master" />
+    <Content Include="Admin\AdminMaster.Master" />
+    <Content Include="Donor\DonorMaster.Master" />
+    <Content Include="Hospital\HospitalMaster.Master" />
+    <Content Include="packages.config" />
+    <None Include="Styles\masterpagemenustyle\.DS_Store" />
+    <None Include="Styles\masterpagemenustyle\css\.DS_Store" />
+    <None Include="Styles\masterpagemenustyle\js\.DS_Store" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>1402</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

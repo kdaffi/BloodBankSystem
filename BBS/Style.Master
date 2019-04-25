@@ -1,0 +1,45 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Style.master.cs" Inherits="BBS.Style" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<meta http-equiv="X-UA-Compatible" content="IE=8, IE=9, chrome=1"/>
+<head runat="server">
+    <title>Blood Bank System</title>
+    <link href="~/Styles/Site.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="Styles/masterpagemenustyle/css/default.css" />
+	<link rel="stylesheet" type="text/css" href="Styles/masterpagemenustyle/css/component.css" />
+    <script src="Styles/masterpagemenustyle/js/modernizr.custom.js" type="text/jscript"></script>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+        <div class="header" style="position:fixed;">
+        <img alt="banner" class="banner" src="Styles/image/logo.png" />
+    </div> <!-- CLOSE HEADER -->
+    </asp:ContentPlaceHolder>
+</head>
+
+<body style="background-color:#e6e6e6;">
+    
+    
+  
+
+        
+
+         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js" type="text/jscript"></script>
+		<script src="Styles/masterpagemenustyle/js/cbpHorizontalMenu.min.js" type="text/jscript"></script>
+		<script type="text/jscript">
+		    $(function () {
+		        cbpHorizontalMenu.init();
+		    });
+		</script>
+    <form id="Form1" style="overflow:hidden;" runat="server">
+     <div class="page" style="background: url(../Styles/Image/hbck1.png) no-repeat;margin-top:20px;">
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            
+           
+		
+        </asp:ContentPlaceHolder>
+    </div> <!-- CLOSE PAGE -->
+    </form>
+    
+</body>
+</html>

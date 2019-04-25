@@ -1,0 +1,97 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="HospitalMaster.master.cs" Inherits="BBS.Hospital.HospitalMaster" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<meta http-equiv="X-UA-Compatible" content="IE=8, IE=9, chrome=1"/>
+<head id="Head1" runat="server">
+    <title>Blood Bank System</title>
+    <link href="~/Styles/Site.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../Styles/masterpagemenustyle/css/default.css" />
+	<link rel="stylesheet" type="text/css" href="../Styles/masterpagemenustyle/css/component.css" />
+    <script src="../Styles/masterpagemenustyle/js/modernizr.custom.js" type="text/jscript"></script>
+    <script src="../Scripts/jquery.min.js" type="text/jscript"></script>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+  <div>
+    <div class="header">
+        <img alt="banner" class="banner" src="../Styles/image/logo.png" />
+    </div> <!-- CLOSE HEADER -->
+
+    <div class="main">
+				<div id="cbp-hrmenu" class="cbp-hrmenu">
+					<ul>
+                        <li>
+							<a onclick="location.href = 'Home.aspx';" class="acursor">Home</a>
+						</li>
+						<li>
+							<a onclick="location.href = 'AddBlood.aspx';" class="acursor">Add Blood</a>
+						</li>
+						<li>
+							<a onclick="location.href = 'BloodBank.aspx';" class="acursor">Blood Bank</a>
+							
+						</li>
+						<li>
+						   <a href="#">Blood Request</a>
+							<div class="cbp-hrsub1">
+								<div class="cbp-hrsub-inner1"> 
+									<div>
+										<h4>Blood Request</h4>
+										<ul>
+											<li><a href="BloodRequestFrom.aspx">Blood Request From Other Hospital</a></li>
+											<li><a href="BloodRequestTo.aspx">Blood Request To Other Hospital</a></li>
+                                            <li><a href="BloodRequestToDonor.aspx">Blood Request To Donor</a></li>
+										</ul>
+                                        </div><!-- /cbp-hrsub-inner -->
+							</div><!-- /cbp-hrsub -->
+								
+						</li>
+					</ul>
+                    
+                </div> <!-- Close menu -->
+		</div> <!-- Close Main Class -->
+        <form id="Form1" runat="server">
+          
+        <p align="Right" style="position:relative;z-index:100;width:280px;float:right;">
+             <asp:Label ID="lblName" runat="server" CssClass="labelname" 
+                    Font-Size="Small"></asp:Label> &nbsp; | &nbsp; 
+             <asp:HyperLink href="../Logout.aspx" ID="HyperLink1" runat="server" 
+                 CssClass="logout" Font-Size="Small">Logout</asp:HyperLink>&nbsp;&nbsp;</p>
+
+		<script src="../Styles/masterpagemenustyle/js/cbpHorizontalMenu.min.js" type="text/jscript"></script>
+		<script type="text/jscript">
+		    $(function () {
+		        cbpHorizontalMenu.init();
+		    });
+		</script>
+
+     <div style="overflow:auto;height:480px;" class="pagehospital">
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            
+        </asp:ContentPlaceHolder>
+    </div> <!-- CLOSE PAGE -->
+    </form>
+    <div class="footer">
+        <span>Copyright © 2014 Blood Bank System | FYP.Uniten.MKhirdaffi</span>
+    </div> <!-- Close footer class -->
+   </div>
+   <script type="text/javascript">
+       $(function () {
+           $("table").addTableFilter();
+       });
+
+       function onBlur(el) {
+           if (el.value == '') {
+               el.value = el.defaultValue;
+           }
+       }
+       function onFocus(el) {
+           if (el.value == el.defaultValue) {
+               el.value = '';
+           }
+       }
+    </script>
+</body>
+</html>
